@@ -19,8 +19,10 @@ fi
 
 printf "%s\n" "ls -la /home/travis/.local/bin/"
 ls -la /home/travis/.local/bin/
-printf "%s\n" "ls -la /usr/local/lib/python2.7/dist-packages/"
-ls -la /usr/local/lib/python2.7/dist-packages/
+#printf "%s\n" "ls -la /usr/local/lib/python3.3/dist-packages/"
+#ls -la /usr/local/lib/python2.7/dist-packages/
+curl -O https://raw.github.com/pypa/pip/master/contrib/get-pip.py
+python3 get-pip.py
 pip --version
 pip install --user --upgrade cpp-coveralls neovim
 pip3.3 --version
