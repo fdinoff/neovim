@@ -17,7 +17,9 @@ elif [[ "${BUILD_MINGW}" == ON ]]; then
   wget -q -O - "http://downloads.sourceforge.net/project/mingw-w64/Toolchains%20targetting%20Win32/Personal%20Builds/rubenvb/gcc-4.8-release/i686-w64-mingw32-gcc-4.8.0-linux64_rubenvb.tar.xz" | tar xJf - -C "${HOME}/.local"
 fi
 
+ls $(which pip)
 pip --version
 pip install --user --upgrade cpp-coveralls neovim
+pip3.3 --version
 pip-3.3 install --user --upgrade neovim
 
