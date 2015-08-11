@@ -17,6 +17,7 @@ elif [[ "${BUILD_MINGW}" == ON ]]; then
   wget -q -O - "http://downloads.sourceforge.net/project/mingw-w64/Toolchains%20targetting%20Win32/Personal%20Builds/rubenvb/gcc-4.8-release/i686-w64-mingw32-gcc-4.8.0-linux64_rubenvb.tar.xz" | tar xJf - -C "${HOME}/.local"
 fi
 
+compgen -c
 printf "%s\n" "ls -la /home/travis/.local/bin/"
 ls -la /home/travis/.local/bin/
 #printf "%s\n" "ls -la /usr/local/lib/python3.3/dist-packages/"
