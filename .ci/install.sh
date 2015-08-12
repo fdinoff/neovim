@@ -18,7 +18,7 @@ elif [[ "${BUILD_MINGW}" == ON ]]; then
 fi
 
 python3 --version
-curl -O https://raw.github.com/pypa/pip/master/contrib/get-pip.py
+curl -O https://bootstrap.pypa.io/get-pip.py
 ls
 python3 get-pip.py --user
 pip --version
