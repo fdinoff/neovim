@@ -17,7 +17,9 @@ elif [[ "${BUILD_MINGW}" == ON ]]; then
   wget -q -O - "http://downloads.sourceforge.net/project/mingw-w64/Toolchains%20targetting%20Win32/Personal%20Builds/rubenvb/gcc-4.8-release/i686-w64-mingw32-gcc-4.8.0-linux64_rubenvb.tar.xz" | tar xJf - -C "${HOME}/.local"
 fi
 
-python3 --version
+compgen -c | grep pip
+compgen -c | grep python
+python3.4 --version
 #curl -O https://bootstrap.pypa.io/get-pip.py
 #ls
 #python3 get-pip.py --user
