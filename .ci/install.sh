@@ -18,9 +18,9 @@ elif [[ "${BUILD_MINGW}" == ON ]]; then
 fi
 
 python3 --version
-curl -O https://bootstrap.pypa.io/get-pip.py
-ls
-python3 get-pip.py --user
+#curl -O https://bootstrap.pypa.io/get-pip.py
+#ls
+#python3 get-pip.py --user
 pip --version
 pip install --user --upgrade cpp-coveralls neovim
 pip3 --version
